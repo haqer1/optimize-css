@@ -76,7 +76,7 @@ Usage:
 Include=("\.applicable" "\.needed[^-:>+]+"); \\
 Exclude=("\.non-applicable[^-:>+\.,]+" "\.unnecessary[^-:>+\.]+"); \\
 Delete=("[^{,]*\.also-not-used,"); \\
-optimize-css.sh input_file.css output_file.css \\
+./optimize-css.sh input_file.css output_file.css \\
 <( (( \${#Include[@]} )) && printf '%s\0' "\${Include[@]}") \\
 <( (( \${#Exclude[@]} )) && printf '%s\0' "\${Exclude[@]}") \\
 <( (( \${#Delete[@]} )) && printf '%s\0' "\${Delete[@]}")

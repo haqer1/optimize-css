@@ -3,7 +3,7 @@ output_file=$2
 
 if [ -z $input_file ] || [ -z $output_file ]; then
   echo "Optimizes auto-generated CSS for a project using only PrimeNG pTooltip"
-  echo "Usage: optimize-css.4.primeng.pTooltip.sh input_file.css output_file.css"
+  echo "Usage: optimize-css.4.primeng.pTooltip-only.sh input_file.css output_file.css"
   exit 1
 fi
 

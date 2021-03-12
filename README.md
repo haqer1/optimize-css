@@ -8,6 +8,7 @@ the CPU & bandwidth overhead associated with serving unnecessary CSS content dur
 
 ## Code
 Currently there are 2 bash scripts under **sh/**.
+
 **optimize-css.sh** is meant to be re-usable by other customized scripts.
 
 ## Usage

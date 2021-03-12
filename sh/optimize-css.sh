@@ -83,21 +83,24 @@ Delete=("[^{,]*\.also-not-used,"); \\
 EOF
 }
 
+in_single_line=$1
 out=$2
-shift 2
-if [ -z $1 ] || [ -z $out ]; then
+if [ -z $in_single_line ] || [ -z $out ]; then
   usage
   exit 1
 fi
-in=$1.$MultilineSuffix
-sed 's/\(\}\)/\1\n/g' $1 > $in
+
+shift 2
 
 mapfile -d '' Include <"$1"
-if [ -z $Include ]; then
+if [ ${#Include[@]} -eq 0 ]; then
   usage
   exit 1
 fi
 mapfile -d '' Exclude <"$2"
 mapfile -d '' Delete <"$3"
+
+in=$in_single_line.$MultilineSuffix
+sed 's/\(\}\)/\1\n/g' $in_single_line > $in
 
 main $in $out "${Delete[@]}"

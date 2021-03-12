@@ -3,8 +3,8 @@ Just a thought for optimization of auto-generated CSS files.
 
 ## Motivation
 E.g., an auto-generated CSS file of 137498 bytes could be optimized to 1000 bytes. This was the case
-for **./optimize-css.4.primeng.pTooltip-only.sh**, written while looking into the aspect of avoiding
-the CPU & bandwidth overhead associated with serving unnecessary CSS content during a project.
+for **./optimize-css.4.primeng.pTooltip-only.sh**, written during a project while looking into the
+aspect of avoiding the CPU & bandwidth overhead associated with serving unnecessary CSS content.
 
 ## Code
 Currently there are 2 bash scripts under **sh/**.

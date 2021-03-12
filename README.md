@@ -12,8 +12,9 @@ Currently there are 2 bash scripts under **sh/**.
 **optimize-css.sh** is meant to be re-usable by other customized scripts.
 
 ## Usage
-This requires providing the regex to include, exclude (or delete sub-strings based on), similar to
-the **./optimize-css.4.primeng.pTooltip-only.sh** example. I.e., customizing the first 3 lines in
+This requires providing the regular expressions for CSS to include, exclude (or delete sub-strings
+based on), similar to the 
+**./optimize-css.4.primeng.pTooltip-only.sh** example. I.e., customizing the first 3 lines in
 the snippet below (& not forgetting to input the paths to the input & output CSS files on line 4
 :smile:).
 

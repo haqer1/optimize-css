@@ -31,7 +31,7 @@ process_replacements() {
   done
 }
 
-delete_substring() {
+delete_substrings() {
   local file=$1
   shift
   local arr=("$@")
@@ -61,7 +61,7 @@ main() {
 #sort $2 > $2.temp
 #sed '$!N; /^\(.*\)\n\1$/!P; D' $2.temp > $2
 
-  delete_substring "$out" "${deleteArray[@]}"
+  delete_substrings "$out" "${deleteArray[@]}"
 
   cp $out $out.$MultilineSuffix
   tr -d '\n' < $out.$MultilineSuffix >  $out

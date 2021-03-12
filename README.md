@@ -8,10 +8,7 @@ the CPU & bandwidth overhead associated with serving unnecessary CSS content dur
 
 ## Code
 Currently there are 2 bash scripts under **sh/**.
-```bash
-optimize-css.sh
-```
-is meant to be re-usable by other customized scripts.
+**optimize-css.sh** is meant to be re-usable by other customized scripts.
 
 ## Usage
 This requires providing the regex to include, exclude (or delete sub-strings based on), similar to

@@ -7,7 +7,7 @@ if [ -z $input_file ] || [ -z $output_file ]; then
   exit 1
 fi
 
-Include=("\.marker" "\.p-component[^-:>+]+" "\.p-tooltip[^-:>+\.]+" "\.p-tooltip-top[^-:>+\.]+" "\.p-tooltip-arrow[^-:>+\.]+" "\.p-tooltip-text[^-:>+\.]+"); \
+Include=("\.p-component[^-:>+]+" "\.p-tooltip[^-:>+\.]+" "\.p-tooltip-top[^-:>+\.]+" "\.p-tooltip-arrow[^-:>+\.]+" "\.p-tooltip-text[^-:>+\.]+"); \
 Exclude=("\.p-tooltip-bottom[^-:>+\.,]+" "\.p-tooltip-left[^-:>+\.]+" "\.p-tooltip-right[^-:>+\.]+"); \
 Delete=("[^{,]*\.p-tooltip-bottom,"); \
 ./optimize-css.sh $input_file $output_file \
